@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-/* Компонент формы */
+/* Компонент формы(само поле и кнопка добавить) */
 
 export default class TodoForm extends React.Component {
     constructor(props) {

@@ -4,8 +4,10 @@ import { connect } from 'react-redux';
 /* Компонент для списка задач */
 
 export default class List extends React.Component {
+ 
     render() {
       let listItems = this.props.items.map((item, i) => {
+
         return (
           <li key={i}>
             <div className="text">{item}</div>
@@ -16,7 +18,6 @@ export default class List extends React.Component {
           </li>
         );
       });
-      
       return <ul>{listItems}</ul>
     }
 }

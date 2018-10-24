@@ -1,6 +1,6 @@
 const initState = {
     luck: true,
-    time: (new Date())
+    time: (new Date()),
 }
 
 const mainReducer = (state = initState, action) => {
@@ -11,11 +11,7 @@ const mainReducer = (state = initState, action) => {
         case "UPDATE_TIME":
             return {...state, time: new Date()};
         case "ADD_PROPERTY":
-            return { ...state, [action.payload.name]: action.payload.value  };
-        case "ADD_ITEM":
-            return { ...state, items: action.payload.value };    
-        // case "ACTION_ITEM_LIST":
-        //     return { ...state };
+            return { ...state, [action.payload.name]: action.payload.value  };    
         default:
             return state;
     }

@@ -4,9 +4,6 @@ import { connect } from 'react-redux';
 import AddProperty from './AddProperty';
 import Clock from './Clock';
 import Debug from './Debug';
-import TodoList from './TodoList';
-
-// import TodoForm from './TodoForm';
 
 class Container extends Component {
 
@@ -19,8 +16,6 @@ class Container extends Component {
             <Clock />
             <AddProperty />
             <Debug data={state} />
-            {/* <TodoForm /> */}
-            <TodoList />
           </div>
         );
 
